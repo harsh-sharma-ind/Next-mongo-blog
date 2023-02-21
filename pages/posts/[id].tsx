@@ -114,7 +114,7 @@ export default function EditPost({
     };
 
     // no such post exists
-  if (!title && !content && !id && process.browser) {
+  if (!title && !content && !_id && process.browser) {
     return (window.location.href = "/");
   }
 
