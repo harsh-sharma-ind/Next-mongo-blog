@@ -28,7 +28,7 @@ export async function getServerSideProps() {
 }
 
 export default function Posts(props: Props) {
-  const [posts, setPosts] = useState < Post > (props.posts);
+  const [posts, setPosts] = useState < [Post] > (props.posts);
 
   const handleDeletePost = async (postId: string) => {
     try {
